@@ -26,8 +26,7 @@ Lazy loading for improved performance
 🛠️ Setup
 Clone the Repo
 
-git clone https://github.com/gntorress/gntorress.github.io
-cd gntorress.github.io
+git clone https://github.com/gntorress/adaptivecard_ticket
 Install dependencies
 
 npm install
