@@ -1,0 +1,112 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+      {
+        "type": "TextBlock",
+        "size": "Medium",
+        "weight": "Bolder",
+        "text": "${subTitle}",
+        "horizontalAlignment": "Center",
+        "wrap": true
+      },
+      {
+        "type": "Input.Text",
+        "label": "First and Last Name",
+        "id": "NameVal",
+        "isRequired": true,
+        "errorMessage": "Please enter your full name",
+        "placeholder": "Enter your name"
+      },
+      {
+        "type": "Input.Text",
+        "label": "Full Upstate Email",
+        "style": "Email",
+        "id": "EmailVal",
+        "isRequired": true,
+        "errorMessage": "Please enter your email",
+        "placeholder": "Enter your email"
+      },
+      {
+        "type": "Input.Text",
+        "label": "Phone",
+        "id": "TelVal",
+        "isRequired": true,
+        "errorMessage": "Please enter your phone number",
+        "placeholder": "Enter your phone number"
+      },
+      {
+        "type": "Input.ChoiceSet",
+        "choices": [
+          {
+            "title": "Faculty",
+            "value": "Faculty"
+          },
+          {
+            "title": "Staff",
+            "value": "Staff"
+          },
+          {
+            "title": "Student",
+            "value": "Student"
+          }
+        ],
+        "label": "Are you Faculty, Staff, or Student?",
+        "isRequired": true,
+        "errorMessage": "Please select you classification",
+        "id": "ClassVal"
+      },
+      {
+        "type": "Input.Text",
+        "placeholder": "Please enter the building and room number",
+        "id": "location",
+        "label": "Location of Issue (if applicable)"
+      },
+      {
+        "type": "Input.Text",
+        "label": "Details",
+        "isMultiline": true,
+        "id": "DetailsVal",
+        "isRequired": true,
+        "errorMessage": "Please give us details about your issue",
+        "placeholder": "Please enter the details of your issue"
+      },
+      {
+        "type": "Input.Date",
+        "label": "Date of Issue",
+        "id": "DateVal",
+        "placeholder": "Please select the date of your issue"
+      },
+      {
+        "type": "Input.ChoiceSet",
+        "id": "PreferrtVal",
+        "label": "What is the best way to contact you?",
+        "value": "1",
+        "choices": [
+          {
+            "title": "Email",
+            "value": "Email"
+          },
+          {
+            "title": "Phone",
+            "value": "Phone"
+          },
+          {
+            "title": "No preference",
+            "value": "No Preference"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "type": "Action.Submit",
+        "title": "Submit",
+        "data": {
+          "message": "Ticket has been submitted",
+          "subTitle": "${subTitle}"
+        }
+      }
+    ]
+  }

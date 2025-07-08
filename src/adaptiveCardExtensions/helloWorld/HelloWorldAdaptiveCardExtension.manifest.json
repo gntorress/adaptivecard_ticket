@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/adaptive-card-extension-manifest.schema.json",
+  "id": "58b5d2c5-f72f-4d31-b994-e45f0a779a9c",
+  "alias": "HelpdeskTicketAdaptiveCardExtension",
+  "componentType": "AdaptiveCardExtension",
+ 
+ 
+  "version": "*",
+  "manifestVersion": 2,
+ 
+  "requiresCustomScript": false,
+  "supportedHosts": ["Dashboard"],
+  "preconfiguredEntries": [{
+    "groupId": "bd067b1e-3ad5-4d5d-a5fe-505f07d7f59c",
+    "group": { "default": "Dashboard" },
+    "title": { "default": "IT Helpdesk Tickets" },
+    "description": { "default": "HelloWorld description" },
+    "iconImageUrl": "https://res.cdn.office.net/files/fabric-cdn-prod_20231211.002/assets/brand-icons/product-monoline/svg/vivaconnections_32x1.svg",
+    "properties": {
+      "title": "IT Helpdesk"
+    },
+    "cardSize": "Large"
+  }]
+}

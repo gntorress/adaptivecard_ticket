@@ -1,0 +1,29 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Thank you for submitting an issue! You may now close this window, or view your past tickets.",
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "View My Tickets",
+          "url": "https://emailuscupstateedu.sharepoint.com/sites/DoIT-demo/SitePages/Ticket-Portal.aspx?source=https%3A%2F%2Femailuscupstateedu.sharepoint.com%2Fsites%2FDoIT-demo%2FSitePages%2FForms%2FByAuthor.aspx"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "New Ticket",
+          "data": {
+            "action": "newTicket"
+          }
+        }
+      ]
+    }
+  ]
+}
