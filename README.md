@@ -12,6 +12,7 @@ src/
 │   └── CardView.ts                        # Card view component
 ├── quickView/
 │   └── QuickView.ts                       # Quick view component
+
 🚀 Features
 Adaptive Card UI that toggles between card view and quick view
 
